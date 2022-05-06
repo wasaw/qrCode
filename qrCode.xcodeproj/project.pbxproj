@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB583FEA281C110F009EB6DC /* QrButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB583FE9281C110F009EB6DC /* QrButton.swift */; };
+		BB583FEC281C1253009EB6DC /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB583FEB281C1253009EB6DC /* HomeController.swift */; };
+		BB583FEE2823F005009EB6DC /* ScaneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB583FED2823F005009EB6DC /* ScaneController.swift */; };
 		BBA220512809AA100015786F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA220502809AA100015786F /* AppDelegate.swift */; };
 		BBA220532809AA100015786F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA220522809AA100015786F /* SceneDelegate.swift */; };
-		BBA220552809AA100015786F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA220542809AA100015786F /* ViewController.swift */; };
 		BBA220582809AA100015786F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA220562809AA100015786F /* Main.storyboard */; };
 		BBA2205A2809AA130015786F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA220592809AA130015786F /* Assets.xcassets */; };
 		BBA2205D2809AA130015786F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA2205B2809AA130015786F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB583FE9281C110F009EB6DC /* QrButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrButton.swift; sourceTree = "<group>"; };
+		BB583FEB281C1253009EB6DC /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		BB583FED2823F005009EB6DC /* ScaneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaneController.swift; sourceTree = "<group>"; };
 		BBA2204D2809AA100015786F /* qrCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBA220502809AA100015786F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBA220522809AA100015786F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BBA220542809AA100015786F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BBA220572809AA100015786F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBA220592809AA130015786F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBA2205C2809AA130015786F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB583FE6281C0D5D009EB6DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB583FEB281C1253009EB6DC /* HomeController.swift */,
+				BB583FED2823F005009EB6DC /* ScaneController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB583FE7281C0D68009EB6DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB583FE8281C0D6D009EB6DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB583FE9281C110F009EB6DC /* QrButton.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BBA220442809AA100015786F = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +84,11 @@
 		BBA2204F2809AA100015786F /* qrCode */ = {
 			isa = PBXGroup;
 			children = (
+				BB583FE8281C0D6D009EB6DC /* Model */,
+				BB583FE7281C0D68009EB6DC /* View */,
+				BB583FE6281C0D5D009EB6DC /* Controller */,
 				BBA220502809AA100015786F /* AppDelegate.swift */,
 				BBA220522809AA100015786F /* SceneDelegate.swift */,
-				BBA220542809AA100015786F /* ViewController.swift */,
 				BBA220562809AA100015786F /* Main.storyboard */,
 				BBA220592809AA130015786F /* Assets.xcassets */,
 				BBA2205B2809AA130015786F /* LaunchScreen.storyboard */,
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBA220552809AA100015786F /* ViewController.swift in Sources */,
+				BB583FEC281C1253009EB6DC /* HomeController.swift in Sources */,
 				BBA220512809AA100015786F /* AppDelegate.swift in Sources */,
 				BBA220532809AA100015786F /* SceneDelegate.swift in Sources */,
+				BB583FEE2823F005009EB6DC /* ScaneController.swift in Sources */,
+				BB583FEA281C110F009EB6DC /* QrButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
