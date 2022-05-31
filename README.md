@@ -1,0 +1,2 @@
+# qrCode
+Сканирует qrCode.
