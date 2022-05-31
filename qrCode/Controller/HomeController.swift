@@ -19,7 +19,7 @@ class HomeController: UIViewController {
         super.viewDidLoad()
         
         qrButton.delegate = self
-        
+
         configureButton()
         
         view.backgroundColor = .lightGray
@@ -45,15 +45,6 @@ class HomeController: UIViewController {
 extension HomeController: LaunchScanerDelegate {
     func launchScaner() {
         let vc = ScaneController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
-}
-
-extension HomeController: UIImagePickerControllerDelegate {
-    
-}
-
-extension HomeController: UINavigationControllerDelegate {
-    
 }

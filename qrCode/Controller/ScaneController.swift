@@ -29,7 +29,6 @@ class ScaneController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         guard let captureDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) else {
             print("DEBUG: Failed to get the camera device")
             return
@@ -81,7 +80,9 @@ class ScaneController: UIViewController {
 //    MARK: - Selectors
     
     @objc private func handleUrl() {
-        print("DEBUG: tap")
+        let text = qrCodeUrlButton.titleLabel?.text ?? ""
+        let vc = LoadPageController(url: text)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc private func leftSwipe(sender: UIPanGestureRecognizer) {

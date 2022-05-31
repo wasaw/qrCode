@@ -25,7 +25,6 @@ class QrButton: UIButton {
         setTitle("Сканировать код", for: .normal)
         titleLabel?.font = UIFont.boldSystemFont(ofSize: 19)
         addTarget(self, action: #selector(handleButton), for: .touchUpInside)
-        
         backgroundColor = .blue
     }
     
